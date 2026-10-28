@@ -1,0 +1,476 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+body {
+    /* Crea la separación diagonal exacta del diseño */
+    background: linear-gradient(145deg, #f7f3e9 60%, #dfcbb5 60%);
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/*header*/
+header{
+    background-color:#f8c8dc;
+    color: #6c4a7e;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: circle;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+ 
+nav ul li  {
+    margin: 15px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration:none;
+    font-weight: bold;
+    display: inline-block;
+    background-color:#b88acb;
+    padding: 12px 22px;
+    border-radius:25px;
+    transition: all 0.3s ease;
+}
+
+/* Cuando pasas el mouse */
+nav ul li a:hover {
+    background-color: #ff6fae;
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* MENÚ */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+/* Distribución del contenido */
+main{
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+aside {
+    width: 30%;
+
+    float: right;
+
+    padding: 30px 30px 30px 0;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(224, 94, 170);
+    color:white;
+    text-align: center;
+    padding: 15px;
+    margin-top:20px;
+}
+
+
+h3{
+    
+    color: #ff2ba0;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* Contenedor general que alinea las dos tarjetas de lado a lado */
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tarjeta izquierda (Texto) con sus bordes redondeados */
+.tarjeta-texto {
+  flex: 3;
+  background-color: #ffffff;
+  border-radius: 30px; /* Redondea las esquinas */
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Tarjeta derecha (Imagen) */
+.tarjeta-imagen {
+  flex: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@keyframes flotar {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+    100% {
+
+        transform: translateY(0);
+    }
+
+}
+
+
+.aside-box {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+/* Contenedor de toda la sección */
+.seccion-emociones {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Estilo para el título centrado y en mayúsculas */
+.titulo-emociones {
+    clear: both;
+    display: block;
+    width: 100%; 
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+/* Formato para la cita destacada */
+.cita-autor {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.cita-autor p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 12px;
+    text-align: justify; /* Mantiene la cita alineada de ambos lados */
+}
+
+.cita-autor cite {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* Alineación para los párrafos regulares */
+.texto-justificado {
+    text-align: justify; /* <--- Hace que las líneas terminen alineadas a los lados */
+    font-size: 17px;
+    line-height:1.7;
+    color: #3d4450;
+    margin-bottom: 20px; /* Separa los párrafos entre sí */
+}
+
+
+
+
+
+
+/* DISEÑO DEL EXPLORADOR EMOCIONAL */
+.interactive-section {
+    margin-bottom: 4rem;
+}
+
+ .emotions-tabs {
+    display: flex !important;
+    flex-direction: row !important;     /* Uno al lado del otro */
+    justify-content: center !important; /* Centrados en la pantalla */
+    flex-wrap: wrap !important;         /* Si no caben, bajan ordenadamente */
+    gap: 25px !important;               /* ¡SEPARACIÓN!: Espacio generoso entre cada botón */
+    margin-bottom: 2rem;
+    width: 100%;
+}
+     
+
+.emo-btn {
+    width: auto;                        /* Hace que el tamaño dependa del texto */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #080808;
+    color: #94a3b8;
+    border: 1px solid #f325b5;
+    
+    /* ¡CAMBIOS CLAVE PARA LA FORMA DE CÁPSULA! */
+    padding: 0.8rem 2.2rem;             /* Más espacio a los lados para que se vea alargado */
+    border-radius: 50px;                /* ¡ESTO HACE LA MAGIA!: Curvatura total como tu imagen */
+    
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.95rem;
+    white-space: nowrap;                /* Evita que el texto se parta en dos líneas */
+}
+
+.emo-btn:hover {
+    color: #f8fafc;
+    border-color: #fff9f9;
+    transform: translateY(-2px);
+}
+
+/* El botón activo de Alegría (el verde de tu imagen) */
+.emo-btn.active[data-emotion="alegria"] { 
+    background: #10b981; 
+    color: white; 
+    border-color: #10b981; 
+    box-shadow: 0 0 15px rgba(16,185,129,0.3); 
+}
+
+/* Control dinámico mediante Atributos de Datos */
+
+.emo-btn.active[data-emotion="tristeza"] {
+     background: #3b82f6; 
+     color: white; 
+     border-color: #3b82f6; 
+     box-shadow: 0 0 15px rgba(59,130,246,0.3);
+     }
+.emo-btn.active[data-emotion="ira"] { 
+    background: #ef4444; 
+    color: white; 
+    border-color: #ef4444; 
+    box-shadow: 0 0 15px rgba(239,68,68,0.3);
+ }
+.emo-btn.active[data-emotion="miedo"] { 
+    background: #8b5cf6; 
+    color: white; 
+    border-color: #8b5cf6; 
+    box-shadow: 0 0 15px rgba(139,92,246,0.3);
+}
+.emo-btn.active[data-emotion="ansiedad"] { 
+    background: #f59e0b; 
+    color: white; 
+    border-color: #f59e0b; 
+    box-shadow: 0 0 15px rgba(245,158,11,0.3); 
+}
+
+
+/* Contenedor principal de la información */
+.display-container {
+    background: #1e293b;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    border: 1px solid #303844;
+    position: relative;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 30px var(--emo-glow);
+    border-top: 5px solid var(--emo-color); /* Cambia de color dinámicamente con JS */
+}
+
+.display-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--emo-color);
+    transition: color 0.5s ease;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-block h4 {
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.info-block p {
+    color: #94a3b8;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.form-container {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #bbb;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input, select, textarea {
+    border: 2px solid #ddd;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5848c2;
+}
+
+.result-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 150px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+.flip-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace que la foto se acomode perfecta sin deformarse */
+  border-radius: 12px; /* Por si quieres que la cajita animada también tenga bordes redondos */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio de Maquetación</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>  ⋆ ˚｡⋆ ♡ ⋆ ˚｡⋆   Como nos afecta en la vida diaria   ⋆ ˚｡⋆ ♡ ⋆ ˚｡⋆</h1>
+    </div>
+     <p class="subtitulo">
+        Aprende a reconocer tus días grises no como un fracaso escolar, 
+        sino como una pausa necesaria para florecer.
+    </p>
+    <nav>
+        <ul>
+            <li><a href="index.html"> 🏠 Volver al inicio</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+  <section class="contenedor-principal">
+    
+    <!-- Tarjeta del lado izquierdo (para el texto) -->
+    <div class="tarjeta-texto">
+      <h3>  
+       Tu energía diaria depende de lo que estás sintiendo
+    </h3>
+      <p>
+       El bajo rendimiento y el desinterés por la escuela suelen ser la alarma de batallas internas 
+       silenciosas. Un número en la boleta jamás definirá tu valor como persona. 
+       Aprender a escuchar tu dolor, en lugar de castigarte por él, es el verdadero inicio de tu bienestar.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+<aside>
+<div class="aside-box">
+<h3>✨ Sabías que...</h3>
+
+<p>            
+Muchas veces, lo que confundimos con falta de disciplina es en realidad un grito de auxilio de 
+nuestra salud mental. 
+</p>
+ </div>
+</aside>
+
+
+
+<section class="seccion-emociones">
+  
+<h3 class="titulo-emociones"> Así es como nos afecta en el día a día</h3>
+  <blockquote class="cita-autor">
+  <h3><p> En el entorno familiar y del hogar</p></h3>
+     <p>Las familias viven en un estado constante de alerta, preocupación y culpa. 
+      La apatía del estudiante suele 
+      confundirse con "flojera", lo que detona discusiones frecuentes y fractura las relaciones en casa.</p>
+  </blockquote>
+
+  <blockquote class="cita-autor">
+    <h3><p> Gastos que no se esperaban</p></h3>
+     <p> El dinero de la familia se tiene que 
+      usar para pagar psicólogos, medicinas o maestros particulares, 
+      lo que aprieta el bolsillo del hogar.</p>
+  </blockquote>
+
+    <blockquote class="cita-autor">
+  <h3><p> Padres agotados</p></h3>
+     <p> Los papás tienen que
+       cambiar sus horarios de trabajo o descuidar sus propias vidas para cuidar 
+       que sus hijos estén a salvo.</p>
+  </blockquote>
+  
+  
+<br><center><img src="uva.jpg" ></center></h3></br>
+
+  <h2 class="titulo-emociones">Factores Asociados</h2>
+  <blockquote class="cita-autor">
+    <h3><p> Factores Escolares </p></h3>
+     <p>Ambiente y Convivencia Escolar: Presencia de casos de bullying (acoso escolar) o ciberacoso a 
+      través de redes sociales; discriminación por cualquier motivo; mala relación, tensión o falta de 
+      comunicación con los profesores; exclusión 
+      social sutil en trabajos en equipo o descansos; y una presión social tóxica por encajar en un grupo.</p>
+  </blockquote>
+
+
+<blockquote class="cita-autor">
+<h3><p>  El entorno familiar </p></h3>
+<p>Ejerce una presión profunda en el desarrollo emocional y académico. Cuando 
+ se juntan los conflictos en casa, las altas expectativas académicas, las crisis económicas y la 
+ falta de redes de apoyo, se crea un escenario de alta vulnerabilidad que 
+ puede detonar un desgaste emocional severo (burnout), ansiedad, depresión o bajo rendimiento escolar.</p>
+  </blockquote>
+
+<blockquote class="cita-autor">
+   <h3><p>  Entorno Personales  </p></h3>
+<p>son situaciones en las que tus sentimientos y pensamientos
+ se descontrolan tanto que no te dejan vivir en paz o hacer tus actividades normales.
+Es cuando estar triste, enojado, asustado o estresado deja de ser algo de un solo día 
+ y se convierte en algo que te acompaña todo el tiempo y te pesa mucho.</p>
+  </blockquote>
+    
+</section>
+   
+<center><img src="morado.jpg" ></center></h3>
+
+
+<div class="form-container">
+
+<h2>¿Cómo va todo hoy? ✨</h2>
+<form id="emotionsForm">
+<div class="form-group">
+<label for="name">Tu nombre o apodo (opcional):</label>
+<input type="text" id="name" placeholder="Tu nombre">
+</div>
+<div class="form-group">
+<label for="mood">¿Cómo te sientes en este momento? </label>
+<select id="mood" required>
+<option value="" disabled selected>Selecciona una opción</option>
+<option value="excelente">¡Súper bien / Feliz! 😁</option>
+<option value="bien">Bien, tranquilo/a 👍</option>
+<option value="cansado">Un poco cansado/a o estresado/a 🥱</option>
+<option value="triste">Triste, desanimado/a o enojado/a 😞</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="message">¿Quieres desahogarte o contar algo más?</label>
+<textarea id="message" placeholder="Puedes escribir lo que quieras, nadie te va a juzgar..."></textarea>
+</div>
+
+        <button type="submit">Enviar mi respuesta</button>
+
+    </form>
+
+    <div id="resultCard" class="result-card"></div>
+
+</div>
+</div>
+
+    <!-- Enlace al archivo de lógica JavaScript -->
+    <script src="script.js"></script>
+ 
+
+<footer>
+<p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
